@@ -44,7 +44,6 @@ src/
 - Testes automatizados (Playwright / Vitest + JSDOM).
 
 ## Equipe
-Preencha com os integrantes do grupo.
 
 | Nome | Matrícula |
 |------|-----------|
