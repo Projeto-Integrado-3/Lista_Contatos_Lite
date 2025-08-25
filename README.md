@@ -48,9 +48,9 @@ Preencha com os integrantes do grupo.
 
 | Nome | Matrícula |
 |------|-----------|
-| (Exemplo) Fulano da Silva | 0000000 |
-|  |  |
-|  |  |
+| Marcondes Alves Duarte | 0000000 |
+| Rayane Amaro dos Santos | 2023010280 |
+| Valdeilson Bezerra de Lima | 0000000 |
 
 ## Licença
 MIT. Consulte `LICENSE`.
