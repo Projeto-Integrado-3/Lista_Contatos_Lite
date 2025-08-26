@@ -4,6 +4,22 @@ import { loadContacts, saveContacts, clearContacts } from './storage.js';
 // Estado em memória
 let contacts = loadContacts().map(c => Contact.fromJSON(c));
 
+// Adicionar contato padrão se a lista estiver vazia
+if (contacts.length === 0) {
+  const defaultContact = {
+    name: 'VALDEILSON BEZERRA DE LIMA',
+    email: 'valdeilsonbdl56@gmail.com',
+    phone: '83991967945'
+  };
+  try {
+    const contact = new Contact(defaultContact);
+    contacts.push(contact);
+    persist(); // Salva o contato inicial
+  } catch (e) {
+    console.error("Erro ao adicionar contato padrão:", e);
+  }
+}
+
 // Seletores
 const form = document.getElementById('contact-form');
 const listEl = document.getElementById('contact-list');
@@ -41,7 +57,7 @@ function render(filterTerm = '') {
       <span class="email" title="E-mail">${contact.email}</span>
       <span class="phone" title="Telefone">${contact.phone}</span>
       <div class="actions-inline">
-        <button data-action="remove" title="Remover">Remover</button>
+        <button data-action="remove" title="Remover" class="danger">Remover</button>
       </div>`;
     listEl.appendChild(li);
   });
