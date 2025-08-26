@@ -1,6 +1,6 @@
 # Lista de Contatos Lite
 
-Projeto para disciplina de Programação para Web - Curso de Análise e Desenvolvimento de Sistemas da niversidade Federal do Cariri (UFCA)
+Projeto para disciplina de Programação para Web - Curso de Análise e Desenvolvimento de Sistemas da Universidade Federal do Cariri (UFCA)
 
 ## 📋 Sobre o Projeto
 Aplicação web para gerenciamento de contatos pessoais que permite cadastrar, listar, filtrar e remover contatos. Implementa validações de dados, busca em tempo real e persistência utilizando localStorage.
