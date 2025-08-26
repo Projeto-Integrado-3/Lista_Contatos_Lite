@@ -11,7 +11,8 @@ Aplicação web para gerenciamento de contatos pessoais que permite cadastrar, l
 |------|-----------|
 | Marcondes Alves Duarte | 0000000 |
 | Rayane Amaro dos Santos | 2023010280 |
-| Valdeilson Bezerra de Lima | 0000000 |
+| Valdeilson Bezerra de Lima | 2023010306
+ |
 
 ## ✨ Funcionalidades
 - Cadastro de contatos com validação de dados
