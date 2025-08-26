@@ -54,11 +54,11 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: clamp(1.75rem, 5vw, 2rem);
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 4vw, 1.5rem);
   color: var(--gray-700);
 }
 
@@ -102,6 +102,7 @@ footer {
 }
 
 main {
+  width: 100%;
   max-width: 1100px;
   margin: 2rem auto;
   padding: 0 1.5rem;
@@ -273,10 +274,10 @@ button.small {
 }
 
 .contact-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr auto;
-  align-items: center;
-  gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
   padding: 1rem;
   background: var(--gray-100);
   border: 1px solid var(--gray-200);
@@ -284,6 +285,7 @@ button.small {
   font-size: 0.9rem;
   transition: var(--transition);
   box-shadow: var(--shadow-sm);
+  word-break: break-word;
 }
 
 .contact-item:hover {
@@ -294,18 +296,22 @@ button.small {
 }
 
 .contact-item strong {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--gray-700);
 }
 
 .contact-item .email,
 .contact-item .phone {
   color: var(--gray-600);
+  font-size: 0.9rem;
 }
 
 .contact-item .actions-inline {
   display: flex;
   gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 0.75rem;
+  width: 100%;
 }
 
 .contact-item button {
@@ -427,46 +433,40 @@ button.small {
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
+    margin-top: 1rem;
+    gap: 1.5rem;
   }
-  
   .card {
     padding: 1.25rem;
   }
-  
-  h1 {
-    font-size: 1.75rem;
-  }
-  
-  h2 {
-    font-size: 1.3rem;
-  }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 480px) {
+  main {
+    padding: 0 1rem;
+  }
+  .actions {
+    flex-direction: column;
+  }
+  .actions button {
+    width: 100%;
+  }
   .contact-item {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "name name"
-      "email phone"
-      "actions actions";
-    padding: 0.75rem;
+    align-items: center; /* Center items on small screens */
   }
-  
-  .contact-item strong {
-    grid-area: name;
-  }
-  
-  .contact-item .email {
-    grid-area: email;
-  }
-  
-  .contact-item .phone {
-    grid-area: phone;
-  }
-  
   .contact-item .actions-inline {
-    grid-area: actions;
-    justify-content: flex-end;
-    margin-top: 0.5rem;
+    justify-content: center;
+  }
+  .list-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .list-header h2 {
+    text-align: center;
+  }
+  .list-header div {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
   }
 }
