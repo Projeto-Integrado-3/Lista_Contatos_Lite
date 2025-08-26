@@ -1,49 +1,11 @@
 # Lista de Contatos Lite
 
-Projeto básico para disciplina de Programação para Web (ADS / UFCA 2025.1).
+**Projeto para disciplina de Programação para Web - Curso de Análise e Desenvolvimento de Sistemas da niversidade Federal do Cariri (UFCA)
 
-## Objetivo
-Página web simples para cadastrar, listar, filtrar e remover contatos (nome, e-mail e telefone) com persistência em `localStorage`.
+## 📋 Sobre o Projeto
+Aplicação web para gerenciamento de contatos pessoais que permite cadastrar, listar, filtrar e remover contatos. Implementa validações de dados, busca em tempo real e persistência utilizando localStorage.
 
-## Funcionalidades
-- Adicionar contato com validação mínima (classe `Contact` com getters/setters).
-- Remover contato individual.
-- Remover todos os contatos.
-- Filtro (busca) por nome ou e-mail em tempo real.
-- Prevenção de cadastro duplicado por e-mail.
-- Exportar contatos em arquivo JSON.
-- Persistência automática em `localStorage`.
-
-## Estrutura
-```
-index.html
-src/
-	css/styles.css
-	js/
-		app.js
-		storage.js
-		models/Contact.js
-```
-
-## Como usar
-1. Abra o arquivo `index.html` em um navegador moderno (suporta módulos ES e `crypto.randomUUID`).
-2. Cadastre contatos pelo formulário.
-3. Utilize o campo de busca para filtrar.
-4. Use os botões de "Remover" para excluir ou "Limpar Tudo" para apagar todos.
-5. Clique em "Exportar" para baixar um `.json` com os dados.
-
-## Validações
-- Nome: obrigatório, mínimo 2 caracteres.
-- E-mail: formato básico válido e único na lista.
-- Telefone: mínimo 8 dígitos (aceita formatação livre com parênteses, espaços, hífens, +).
-
-## Próximos Passos (Sugestões)
-- Edição de contato.
-- Ordenação por nome.
-- Máscara de telefone.
-- Testes automatizados (Playwright / Vitest + JSDOM).
-
-## Equipe
+## 👨‍💻 Equipe de Desenvolvimento
 
 | Nome | Matrícula |
 |------|-----------|
@@ -51,5 +13,58 @@ src/
 | Rayane Amaro dos Santos | 2023010280 |
 | Valdeilson Bezerra de Lima | 0000000 |
 
-## Licença
-MIT. Consulte `LICENSE`.
+## ✨ Funcionalidades
+- Cadastro de contatos com validação de dados
+- Busca em tempo real por nome ou e-mail
+- Remoção individual ou em lote de contatos
+- Persistência automática no localStorage
+- Exportação de dados em formato JSON
+- Prevenção de contatos duplicados
+
+## 🛠️ Tecnologias Utilizadas
+- HTML5 - Estrutura da página
+- CSS3 - Estilização e responsividade
+- JavaScript (ES6+) - Lógica e interatividade
+- LocalStorage - Armazenamento de dados
+
+
+## 📂 Estrutura do Projeto
+```
+index.html              # Interface principal
+src/
+    css/styles.css      # Estilização CSS
+    js/
+        app.js          # Lógica principal
+        storage.js      # Persistência
+        models/Contact.js # Modelo de dados
+```
+
+## 🚀 Como Usar
+1. Abra o arquivo `index.html` em um navegador
+2. Preencha o formulário para adicionar contatos
+3. Use a busca para filtrar contatos
+4. Clique em "Remover" para excluir um contato
+5. Use "Exportar" para baixar os dados em JSON
+
+## ✅ Validações
+- Nome: obrigatório, mínimo 2 caracteres
+- E-mail: formato válido e único na lista
+- Telefone: mínimo 8 dígitos, aceita vários formatos
+
+## 🧠 Conceitos Aplicados
+- Manipulação do DOM
+- Eventos de formulário
+- Validação de dados
+- Armazenamento no localStorage
+- Classes com getters/setters
+- Módulos JavaScript
+
+## 📊 Requisitos Atendidos
+- [x] Eventos de formulário para cadastro/remoção
+- [x] Organização da lógica em funções
+- [x] Representação de dados com classes e getters/setters
+- [x] Validação de dados nos setters
+- [x] Persistência utilizando localStorage e JSON
+
+## 📜 Licença
+MIT. Consulte o arquivo `LICENSE` para mais detalhes.
