@@ -9,7 +9,7 @@ Aplicação web para gerenciamento de contatos pessoais que permite cadastrar, l
 
 | Nome | Matrícula |
 |------|-----------|
-| Marcondes Alves Duarte | 0000000 |
+| Marcondes Alves Duarte | 2023010306|
 | Rayane Amaro dos Santos | 2023010280 |
 | Valdeilson Bezerra de Lima | 0000000 |
 
