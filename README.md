@@ -39,6 +39,12 @@ src/
         models/Contact.js # Modelo de dados
 ```
 
+## 🌐 Página publicada
+
+O projeto está disponível online via GitHub Pages:
+[https://projeto-integrado-3.github.io/Lista_Contatos_Lite/]
+
+
 ## 🚀 Como Usar
 1. Abra o arquivo `index.html` em um navegador
 2. Preencha o formulário para adicionar contatos
